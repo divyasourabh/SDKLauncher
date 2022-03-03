@@ -1,7 +1,7 @@
 package com.ds.showmessage
 
 class Message {
-    fun show(): String{
-        return "Hello World";
+    fun show(): SDKWebViewFragment {
+        return SDKWebViewFragment()
     }
 }
