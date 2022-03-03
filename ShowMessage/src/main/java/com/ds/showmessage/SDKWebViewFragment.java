@@ -25,6 +25,7 @@ public class SDKWebViewFragment extends Fragment {
 
         // Enable Javascript
         WebSettings webSettings = mWebView.getSettings();
+        mWebView.addJavascriptInterface(new JavaScriptInterface(getActivity()), "Android");
         webSettings.setJavaScriptEnabled(true);
 
         // Force links and redirects to open in the WebView instead of in a browser
